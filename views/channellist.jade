@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1.
+    Channel list
+  ul
+    each channel, i in channellist
+        li
+            a(href="mailto:#(channel.channelName)")=channel.callLetters

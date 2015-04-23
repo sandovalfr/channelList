@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 = title
+    form#formAddChannel(name="addchannel", method="post", action="/addchannel")
+        input#inputChannelName(type="text", placeholder="channelName", name="channelName")
+        input#inputCallLetters(type="text", placeholder="callLetters", name="callLetters")
+        button#btnSubmit(type="submit") submit
